@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="submit_feedback.php" method="post">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required>
+        </div>
+        <div>
+            <label for="name">Email:</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+            <label for="name">Feedback:</label>
+            <input type="feedback" name="feedback" id="feedback" required>
+        </div>
+        <div>
+            <label for="name">Rating (1-5):</label>
+            <input type="number" name="rating" id="rating" min="1" max="5" required>
+        </div>
+        <button type="submit" name="submit">Submit</button>
+    </form>
+</body>
+</html>
